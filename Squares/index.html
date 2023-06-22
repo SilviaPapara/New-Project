@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="score-container">
+      <h4>Score:</h4>
+      <input
+        id="input"
+        oninput="this.value=this.value.replace(/[^\d]/g, '').substring(0, 3);"
+      />
+    </div>
+    <div class="container">
+      <div class="left-container">
+        <div class="left-highlight" id="left-highlight"></div>
+        <div class="left-circle">
+          <p>01</p>
+        </div>
+        <div class="left-square">
+          <div class="column">
+            <span class="dot"></span>
+          </div>
+          <h2 class="left-result">Result</h2>
+          <p>
+            This slide is 100% editable. Adapt it to your needs and capture your
+            audience's attention.
+          </p>
+          <div class="column">
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+      <div class="middle-container">
+        <div class="arrow-and-circle">
+          <div class="middle-circle">
+            <p>02</p>
+          </div>
+          <div class="middle-highlight" id="middle-highlight"></div>
+        </div>
+        <div class="middle-square">
+          <div class="column">
+            <span class="dot"></span>
+          </div>
+          <h2 class="middle-result">Result</h2>
+          <p>
+            This slide is 100% editable. Adapt it to your needs and capture your
+            audience's attention.
+          </p>
+          <div class="column">
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="right-highlight" id="right-highlight"></div>
+        <div class="right-circle">
+          <p>03</p>
+        </div>
+        <div class="right-square">
+          <div class="column">
+            <span class="dot"></span>
+          </div>
+          <h2 class="right-result">Result</h2>
+          <p>
+            This slide is 100% editable. Adapt it to your needs and capture your
+            audience's attention.
+          </p>
+          <div class="column">
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+      <div class="lastDots">
+        <span class="lastDot"></span>
+        <span class="lastDot"></span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
